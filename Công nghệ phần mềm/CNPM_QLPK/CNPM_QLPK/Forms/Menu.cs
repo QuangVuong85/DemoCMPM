@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CNPM_QLPK.User_Control;
+using CNPM_QLPK.Forms;
 
 namespace CNPM_QLPK
 {
@@ -23,9 +24,15 @@ namespace CNPM_QLPK
             home.Dock = DockStyle.Fill;
         }
 
-        private void button12_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult r;
+            r = MessageBox.Show("Bạn có muốn thoát hay không?", " Thông báo !", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                DangNhap d = new DangNhap();
+                this.Close();
+            }
         }
 
         private void btn_TiepNhan_Click(object sender, EventArgs e)
@@ -108,5 +115,7 @@ namespace CNPM_QLPK
             panelcontrol.Controls.Add(dv);
             dv.Dock = DockStyle.Fill;
         }
+
+        
     }
 }

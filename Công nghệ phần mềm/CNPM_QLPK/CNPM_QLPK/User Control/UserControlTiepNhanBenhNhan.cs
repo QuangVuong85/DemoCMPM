@@ -16,5 +16,7 @@ namespace CNPM_QLPK.User_Control
         {
             InitializeComponent();
         }
+
+        
     }
 }

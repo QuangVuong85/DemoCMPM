@@ -16,5 +16,10 @@ namespace CNPM_QLPK.User_Control
         {
             InitializeComponent();
         }
+
+        private void UserControlThuocvaKeDon_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
