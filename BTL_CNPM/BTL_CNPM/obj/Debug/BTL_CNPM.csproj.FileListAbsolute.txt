@@ -1,0 +1,15 @@
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\BTL_CNPM.exe.config
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\BTL_CNPM.exe
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\BTL_CNPM.pdb
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.csprojAssemblyReference.cache
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.Properties.Resources.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.GenerateResource.cache
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.CoreCompileInputs.cache
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.exe
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.pdb
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.frmDangNhap.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmMain.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmTroGiup.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmTrangChu.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmKhamBenh.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmTiepNhanBN.resources
