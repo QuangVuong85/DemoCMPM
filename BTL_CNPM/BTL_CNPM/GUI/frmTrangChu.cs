@@ -32,9 +32,9 @@ namespace BTL_CNPM.GUI
             {
                 stt = i + 1;
                 ListViewItem listitem = new ListViewItem((stt).ToString());
-                listitem.SubItems.Add(dv.listDichVuCLS()[i].MaDichVu.ToString());
-                listitem.SubItems.Add(dv.listDichVuCLS()[i].TenDichVu.ToString());
-                listitem.SubItems.Add(String.Format(new CultureInfo("vi-VN"), "{0:c00}", dv.listDichVuCLS()[i].DonGia));
+                listitem.SubItems.Add(dv.GetListDichVuCLS()[i].MaDichVu.ToString());
+                listitem.SubItems.Add(dv.GetListDichVuCLS()[i].TenDichVu.ToString());
+                listitem.SubItems.Add(String.Format(new CultureInfo("vi-VN"), "{0:c00}", dv.GetListDichVuCLS()[i].DonGia));
                 listViewDV.Items.Add(listitem);
             }
 
