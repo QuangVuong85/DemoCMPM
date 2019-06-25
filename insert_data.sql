@@ -15,3 +15,15 @@ VALUES
 ('CLS9', N'Siêu âm ổ bụng', 434000)
 GO
 
+INSERT INTO dbo.Thuoc
+(MaThuoc, TenThuoc, DuongDung, DVT, DonGia
+)
+VALUES
+('1', N'Meloxicam', N'Uống', N'Viên', 2000),
+('2', N'Diclofenac', N'Uống', N'Viên', 3000),
+('3', N'Loratadin', N'Uống', N'Viên', 5000),
+('4', N'Prednisolon', N'Uống', N'Viên', 7000),
+('5', N'Viabiovit', N'Tiêm', N'Ống', 12000)
+GO
+
+
