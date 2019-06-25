@@ -13,3 +13,8 @@ F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCM
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmTrangChu.resources
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmKhamBenh.resources
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmTiepNhanBN.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\EntityFramework.dll
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\EntityFramework.SqlServer.dll
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\EntityFramework.xml
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\bin\Debug\EntityFramework.SqlServer.xml
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.CopyComplete
