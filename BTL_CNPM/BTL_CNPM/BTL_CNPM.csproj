@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\DichVuCLS_BLL.cs" />
+    <Compile Include="BLL\Thuoc_BLL.cs" />
     <Compile Include="DAL\Entities\BangICD.cs" />
     <Compile Include="DAL\Entities\BenhNhan.cs" />
     <Compile Include="DAL\Entities\ChiTietChiDinhCL.cs" />
@@ -77,6 +78,12 @@
     </Compile>
     <Compile Include="GUI\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDMThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDMThuoc.Designer.cs">
+      <DependentUpon>frmDMThuoc.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmKhamBenh.cs">
       <SubType>Form</SubType>
@@ -112,6 +119,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDMThuoc.resx">
+      <DependentUpon>frmDMThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhamBenh.resx">
       <DependentUpon>frmKhamBenh.cs</DependentUpon>

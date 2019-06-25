@@ -24,12 +24,15 @@ namespace BTL_CNPM.GUI
             loadForm(new frmTrangChu());
         }
 
+        // start TRO GIUP
         private void thongTinPMStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTroGiup help = new frmTroGiup();
             help.ShowDialog();
         }
+        // end TRO GIUP
 
+        // start TOOLSTRIP
         private void homeToolStripButton_Click(object sender, EventArgs e)
         {
             frmTrangChu home = new frmTrangChu();
@@ -41,7 +44,9 @@ namespace BTL_CNPM.GUI
         {
             closeFormInPanel(this.panelMain);
         }
+        // end TOOLSTRIP
 
+        // start NGHIEP VU
         private void tiepNhanBNToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmTiepNhanBN tiepNhanBN = new frmTiepNhanBN();
@@ -55,6 +60,75 @@ namespace BTL_CNPM.GUI
             closeFormInPanel(this.panelMain);
             loadForm(khamBenh);
         }
+
+        private void chiDinhCLSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dsTaiKhamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        // end NGHIEP VU
+
+        // start DANH MUC
+        private void danhMucThuocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDMThuoc dmthuoc = new frmDMThuoc();
+            closeFormInPanel(this.panelMain);
+            loadForm(dmthuoc);
+        }
+
+        private void danhMucDonThuocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void danhMucNVToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void danhMucBenhNhanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        // end DANH MUC
+
+        // start HE THONG
+        private void saoLuuDuLieuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doiMatKhauToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dangXuatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        // end HE THONG
+
+        // start BAOCAO
+        private void thongKeBNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thongKeSLThuocToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        // end BAO CAO
 
         #endregion
 
@@ -78,10 +152,6 @@ namespace BTL_CNPM.GUI
             frmName.Show();
         }
 
-
-
         #endregion
-
-        
     }
 }
