@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\BenhNhan_ThanNhan_BLL.cs" />
     <Compile Include="BLL\DichVuCLS_BLL.cs" />
     <Compile Include="BLL\Thuoc_BLL.cs" />
     <Compile Include="DAL\Entities\BangICD.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="DAL\Entities\TaiKhoan.cs" />
     <Compile Include="DAL\Entities\ThanNhan.cs" />
     <Compile Include="DAL\Entities\Thuoc.cs" />
+    <Compile Include="DAL\ViewModels\BenhNhan_ThanNhan.cs" />
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,5 +206,6 @@
   <ItemGroup>
     <None Include="Resources\icons8-editbtn-48.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

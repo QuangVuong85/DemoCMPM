@@ -52,6 +52,11 @@
             this.lblMaThuoc = new System.Windows.Forms.Label();
             this.groupBoxDSThuoc = new System.Windows.Forms.GroupBox();
             this.dgvDSThuoc = new System.Windows.Forms.DataGridView();
+            this.lblCanhBao1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBoxTKThuoc.SuspendLayout();
             this.groupBoxTTThuoc.SuspendLayout();
             this.groupBoxDSThuoc.SuspendLayout();
@@ -63,7 +68,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(528, 9);
+            this.label1.Location = new System.Drawing.Point(539, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(540, 44);
             this.label1.TabIndex = 1;
@@ -71,13 +76,14 @@
             // 
             // groupBoxTKThuoc
             // 
+            this.groupBoxTKThuoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBoxTKThuoc.Controls.Add(this.btnTimKiem);
             this.groupBoxTKThuoc.Controls.Add(this.txtTimKiem);
             this.groupBoxTKThuoc.Controls.Add(this.radioButtonTKTenThuoc);
             this.groupBoxTKThuoc.Controls.Add(this.radioButtonTKMaThuoc);
             this.groupBoxTKThuoc.Controls.Add(this.lblTimKiem);
             this.groupBoxTKThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxTKThuoc.Location = new System.Drawing.Point(12, 87);
+            this.groupBoxTKThuoc.Location = new System.Drawing.Point(23, 87);
             this.groupBoxTKThuoc.Name = "groupBoxTKThuoc";
             this.groupBoxTKThuoc.Size = new System.Drawing.Size(434, 271);
             this.groupBoxTKThuoc.TabIndex = 2;
@@ -136,6 +142,12 @@
             // 
             // groupBoxTTThuoc
             // 
+            this.groupBoxTTThuoc.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBoxTTThuoc.Controls.Add(this.label5);
+            this.groupBoxTTThuoc.Controls.Add(this.label4);
+            this.groupBoxTTThuoc.Controls.Add(this.label3);
+            this.groupBoxTTThuoc.Controls.Add(this.label2);
+            this.groupBoxTTThuoc.Controls.Add(this.lblCanhBao1);
             this.groupBoxTTThuoc.Controls.Add(this.btnLamMoi);
             this.groupBoxTTThuoc.Controls.Add(this.btnXoa);
             this.groupBoxTTThuoc.Controls.Add(this.btnCapNhat);
@@ -152,9 +164,9 @@
             this.groupBoxTTThuoc.Controls.Add(this.lblMaThuoc);
             this.groupBoxTTThuoc.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.groupBoxTTThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxTTThuoc.Location = new System.Drawing.Point(467, 87);
+            this.groupBoxTTThuoc.Location = new System.Drawing.Point(478, 87);
             this.groupBoxTTThuoc.Name = "groupBoxTTThuoc";
-            this.groupBoxTTThuoc.Size = new System.Drawing.Size(1118, 271);
+            this.groupBoxTTThuoc.Size = new System.Drawing.Size(1134, 271);
             this.groupBoxTTThuoc.TabIndex = 3;
             this.groupBoxTTThuoc.TabStop = false;
             this.groupBoxTTThuoc.Text = "Thông tin thuốc";
@@ -298,7 +310,7 @@
             this.groupBoxDSThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxDSThuoc.Location = new System.Drawing.Point(12, 384);
             this.groupBoxDSThuoc.Name = "groupBoxDSThuoc";
-            this.groupBoxDSThuoc.Size = new System.Drawing.Size(1573, 409);
+            this.groupBoxDSThuoc.Size = new System.Drawing.Size(1595, 409);
             this.groupBoxDSThuoc.TabIndex = 3;
             this.groupBoxDSThuoc.TabStop = false;
             this.groupBoxDSThuoc.Text = "Danh sách thuốc";
@@ -312,14 +324,65 @@
             this.dgvDSThuoc.Location = new System.Drawing.Point(6, 26);
             this.dgvDSThuoc.Name = "dgvDSThuoc";
             this.dgvDSThuoc.RowTemplate.Height = 24;
-            this.dgvDSThuoc.Size = new System.Drawing.Size(1561, 377);
+            this.dgvDSThuoc.Size = new System.Drawing.Size(1583, 377);
             this.dgvDSThuoc.TabIndex = 0;
+            this.dgvDSThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSThuoc_CellClick);
+            // 
+            // lblCanhBao1
+            // 
+            this.lblCanhBao1.AutoSize = true;
+            this.lblCanhBao1.ForeColor = System.Drawing.Color.Red;
+            this.lblCanhBao1.Location = new System.Drawing.Point(587, 53);
+            this.lblCanhBao1.Name = "lblCanhBao1";
+            this.lblCanhBao1.Size = new System.Drawing.Size(15, 20);
+            this.lblCanhBao1.TabIndex = 6;
+            this.lblCanhBao1.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(587, 91);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(15, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(586, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(15, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(1107, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(15, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "*";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(1105, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 20);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "*";
             // 
             // frmDMThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1597, 805);
+            this.ClientSize = new System.Drawing.Size(1619, 805);
             this.Controls.Add(this.groupBoxDSThuoc);
             this.Controls.Add(this.groupBoxTTThuoc);
             this.Controls.Add(this.groupBoxTKThuoc);
@@ -364,5 +427,10 @@
         private System.Windows.Forms.TextBox txtMaThuoc;
         private System.Windows.Forms.Label lblMaThuoc;
         private System.Windows.Forms.DataGridView dgvDSThuoc;
+        private System.Windows.Forms.Label lblCanhBao1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

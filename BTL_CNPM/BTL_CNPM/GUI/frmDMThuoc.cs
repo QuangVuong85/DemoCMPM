@@ -1,4 +1,5 @@
 ﻿using BTL_CNPM.BLL;
+using BTL_CNPM.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,32 +34,97 @@ namespace BTL_CNPM.GUI
         private void frmDMThuoc_Load(object sender, EventArgs e)
         {
             loadData2DataGridView();
-            bindingsData2Control();
+            //bindingsData2Control();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
+            clearDataInControl();
             loadData2DataGridView();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            Thuoc_BLL _thuoc = new Thuoc_BLL();
 
+            if (radioButtonTKMaThuoc.Checked == true)
+            {
+                dgvDSThuoc.DataSource = _thuoc.FindByMaThuoc(txtTimKiem.Text);
+            }
+
+            if (radioButtonTKTenThuoc.Checked == true)
+            {
+                dgvDSThuoc.DataSource = _thuoc.FindByTenThuoc(txtTimKiem.Text);
+            }
         }
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
+            Thuoc_BLL _thuoc = new Thuoc_BLL();
+            Thuoc th = new Thuoc();
 
+            th.MaThuoc = txtMaThuoc.Text.ToString();
+            th.TenThuoc = txtTenThuoc.Text.ToString();
+            th.DonGia = Convert.ToInt32(txtDonGia.Text);
+            th.DuongDung = cbxCachDung.SelectedItem.ToString();
+            th.DVT = cbxDonViTinh.SelectedItem.ToString();
+
+            if (_thuoc.CheckMaThuoc(th) == false)
+            {
+                MessageBox.Show("Mã thuốc đã tồn tại.", "Thông báo", MessageBoxButtons.OK);
+                txtMaThuoc.Focus();
+            }
+            else
+            {
+                _thuoc.Add(th);
+                MessageBox.Show("Thêm mới thuốc thành công.", "Thông báo", MessageBoxButtons.OK);
+                loadData2DataGridView();
+            }
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Thuoc_BLL _thuoc = new Thuoc_BLL();
+                Thuoc th = new Thuoc();
 
+                th.MaThuoc = txtMaThuoc.Text.ToString().Trim();
+                th.TenThuoc = txtTenThuoc.Text.ToString().Trim();
+                th.DonGia = Convert.ToInt32(txtDonGia.Text.Trim());
+                th.DuongDung = cbxCachDung.SelectedItem.ToString();
+                th.DVT = cbxDonViTinh.SelectedItem.ToString();
+
+                _thuoc.Update(th);
+                MessageBox.Show("Cập nhật thông tin thuốc thành công.", "Thông báo", MessageBoxButtons.OK);
+                loadData2DataGridView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
+            }
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Thuoc_BLL _thuoc = new Thuoc_BLL();
 
+                _thuoc.Remove(txtMaThuoc.Text.ToString());
+                MessageBox.Show("Xóa thuốc thành công.", "Thông báo", MessageBoxButtons.OK);
+                loadData2DataGridView();
+                //bindingsData2Control();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK);
+            }
+        }
+
+        private void dgvDSThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            loadData2Control(e);
         }
         #endregion
 
@@ -97,15 +163,36 @@ namespace BTL_CNPM.GUI
             dgvDSThuoc.Columns[5].Visible = false;
         }
 
-        // đưa dữ liệu từ datagridview lên các control
+        // cách 1:đưa dữ liệu từ datagridview lên các control
         public void bindingsData2Control()
         {
-            txtMaThuoc.DataBindings.Add(new Binding("Text", dgvDSThuoc.DataSource, "MaThuoc"));
-            txtTenThuoc.DataBindings.Add(new Binding("Text", dgvDSThuoc.DataSource, "TenThuoc"));
+            txtMaThuoc.DataBindings.Add(new Binding("Text".Trim(), dgvDSThuoc.DataSource, "MaThuoc"));
+            txtTenThuoc.DataBindings.Add(new Binding("Text".Trim(), dgvDSThuoc.DataSource, "TenThuoc"));
             cbxCachDung.DataBindings.Add(new Binding("Text", dgvDSThuoc.DataSource, "DuongDung"));
             cbxDonViTinh.DataBindings.Add(new Binding("Text", dgvDSThuoc.DataSource, "DVT"));
-            txtDonGia.DataBindings.Add(new Binding("Text", dgvDSThuoc.DataSource, "DonGia"));
+            txtDonGia.DataBindings.Add(new Binding("Text".Trim(), dgvDSThuoc.DataSource, "DonGia"));
+        }
+        // cách 2:đưa dữ liệu từ datagridview lên các control
+        public void loadData2Control(DataGridViewCellEventArgs e)
+        {
+            int id = e.RowIndex;
+            txtMaThuoc.Text = dgvDSThuoc.Rows[id].Cells[0].Value.ToString().Trim();
+            txtTenThuoc.Text = dgvDSThuoc.Rows[id].Cells[1].Value.ToString().Trim();
+            cbxCachDung.Text = dgvDSThuoc.Rows[id].Cells[2].Value.ToString().Trim();
+            cbxDonViTinh.Text = dgvDSThuoc.Rows[id].Cells[3].Value.ToString().Trim();
+            txtDonGia.Text = dgvDSThuoc.Rows[id].Cells[4].Value.ToString().Trim();
+        }
+        // xóa text trong các control
+        public void clearDataInControl()
+        {
+            txtMaThuoc.Text = string.Empty;
+            txtTenThuoc.Text = string.Empty;
+            cbxCachDung.Text = "Chọn cách dùng";
+            cbxDonViTinh.Text = "Chọn ĐVT";
+            txtDonGia.Text = string.Empty;
         }
         #endregion
+
+        
     }
 }
