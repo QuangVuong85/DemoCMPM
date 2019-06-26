@@ -16,5 +16,21 @@ namespace BTL_CNPM.GUI
         {
             InitializeComponent();
         }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDonThuoc_Click(object sender, EventArgs e)
+        {
+            frmDonThuoc donThuoc = new frmDonThuoc();
+            donThuoc.ShowDialog();
+        }
     }
 }

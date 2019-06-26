@@ -85,6 +85,12 @@
     <Compile Include="GUI\frmDMThuoc.Designer.cs">
       <DependentUpon>frmDMThuoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDonThuoc.Designer.cs">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmKhamBenh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDMThuoc.resx">
       <DependentUpon>frmDMThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDonThuoc.resx">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmKhamBenh.resx">
       <DependentUpon>frmKhamBenh.cs</DependentUpon>
@@ -162,7 +171,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icons8-add-48.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-forgot-password-64.png" />
   </ItemGroup>
@@ -180,6 +191,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editbtn-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

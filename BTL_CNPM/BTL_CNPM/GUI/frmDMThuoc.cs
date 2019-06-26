@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -82,13 +83,16 @@ namespace BTL_CNPM.GUI
             dgvDSThuoc.Columns[1].HeaderCell.Value = "Tên thuốc";
             dgvDSThuoc.Columns[2].HeaderCell.Value = "Cách dùng";
             dgvDSThuoc.Columns[3].HeaderCell.Value = "Đơn vị tính";
-            dgvDSThuoc.Columns[4].HeaderCell.Value = "Đơn giá";
+            dgvDSThuoc.Columns[4].HeaderCell.Value = "Đơn giá (VNĐ)";
 
             dgvDSThuoc.Columns[0].Width = 100;
             dgvDSThuoc.Columns[1].Width = 200;
             dgvDSThuoc.Columns[2].Width = 120;
             dgvDSThuoc.Columns[3].Width = 120;
             dgvDSThuoc.Columns[4].Width = 200;
+
+            dgvDSThuoc.Columns[4].DefaultCellStyle.Format = "#,###";
+            dgvDSThuoc.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
 
             dgvDSThuoc.Columns[5].Visible = false;
         }
