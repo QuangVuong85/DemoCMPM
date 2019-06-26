@@ -26,4 +26,42 @@ VALUES
 ('5', N'Viabiovit', N'Tiêm', N'Ống', 12000)
 GO
 
+INSERT INTO dbo.NhanVien
+(MaNhanVien, TenNhanVien, NgaySinh, GioiTinh, DiaChi, SDT, HocHam, HocVi)
+VALUES
+('',        -- MaNhanVien - varchar(10)
+    N'',       -- TenNhanVien - nvarchar(100)
+    GETDATE(), -- NgaySinh - date
+    N'',       -- GioiTinh - nvarchar(20)
+    N'',       -- DiaChi - nvarchar(100)
+    '',        -- SDT - varchar(20)
+    N'',       -- HocHam - nvarchar(50)
+    N''        -- HocVi - nvarchar(50)
+)
+GO
+
+INSERT INTO dbo.TaiKhoan
+(MaTaiKhoan, TenDangNhap, MatKhau, VaiTro, MaNhanVien)
+VALUES
+(0,    -- MaTaiKhoan - int
+    N'',  -- TenDangNhap - nvarchar(50)
+    N'',  -- MatKhau - nvarchar(50)
+    NULL, -- VaiTro - bit
+    ''    -- MaNhanVien - varchar(10)
+)
+GO
+
+INSERT INTO	dbo.ThanNhan
+(MaThanNhan,TenThanNhan,CMND,SDT)
+VALUES
+('1', N'Trần Văn A', '164618311', '096415888'),
+('2', N'Nguyễn Thị B', '164618322', '096888668')
+GO
+
+INSERT dbo.BenhNhan
+(MaBenhNhan,TenBenhNhan,NgaySinh,DiaChi,GioiTinh,CMND,MaThanNhan)
+VALUES
+('1', N'Đào Thị An', '11-12-1990', N'Hòa Bình', N'Nam', '161235489', '1'),
+('2', N'Nguyễn Văn Minh', '01-01-1992', N'Hà Nội', N'Nữ', '151503669', '2')
+GO
 
