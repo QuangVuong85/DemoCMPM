@@ -20,3 +20,4 @@ F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCM
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.csproj.CopyComplete
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmDMThuoc.resources
 F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmDonThuoc.resources
+F:\Học Tập\Ky 6\Cong Nghe Phan Mem\He thong quan ly kham va chua benh\DemoCMPM\BTL_CNPM\BTL_CNPM\obj\Debug\BTL_CNPM.GUI.frmDMNhanVien.resources

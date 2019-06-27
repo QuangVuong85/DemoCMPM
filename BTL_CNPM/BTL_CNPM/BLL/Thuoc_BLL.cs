@@ -14,7 +14,12 @@ namespace BTL_CNPM.BLL
         public List<Thuoc> GetListThuoc()
         {
             List<Thuoc> lst = null;
-            lst = (from u in db.Thuocs select u).ToList();
+
+            // use LINQ
+            //lst = (from u in db.Thuocs select u).ToList();
+
+            // use procedure
+            lst = db.Database.SqlQuery<Thuoc>("EXEC sp_Thuoc_Select").ToList();
             return lst;
         }
 

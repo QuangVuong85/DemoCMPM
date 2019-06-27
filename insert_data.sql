@@ -29,26 +29,17 @@ GO
 INSERT INTO dbo.NhanVien
 (MaNhanVien, TenNhanVien, NgaySinh, GioiTinh, DiaChi, SDT, HocHam, HocVi)
 VALUES
-('',        -- MaNhanVien - varchar(10)
-    N'',       -- TenNhanVien - nvarchar(100)
-    GETDATE(), -- NgaySinh - date
-    N'',       -- GioiTinh - nvarchar(20)
-    N'',       -- DiaChi - nvarchar(100)
-    '',        -- SDT - varchar(20)
-    N'',       -- HocHam - nvarchar(50)
-    N''        -- HocVi - nvarchar(50)
-)
+('1', N'Hoàng Văn A', '1-1-1890',  N'Nam',  N'Hà Nội',  '03666135888',  N'Không', N'Tiễn sĩ'),
+('2', N'Nguyễn Thị H', '1-1-1890',  N'Nữ',  N'Hà Nội',  '03666135444',  N'Không', N'Tiễn sĩ'),
+('3', N'Đào Văn T', '1-1-1890',  N'Nam',  N'Hà Nội',  '03666666888',  N'Không', N'Tiễn sĩ')
 GO
 
 INSERT INTO dbo.TaiKhoan
 (MaTaiKhoan, TenDangNhap, MatKhau, VaiTro, MaNhanVien)
 VALUES
-(0,    -- MaTaiKhoan - int
-    N'',  -- TenDangNhap - nvarchar(50)
-    N'',  -- MatKhau - nvarchar(50)
-    NULL, -- VaiTro - bit
-    ''    -- MaNhanVien - varchar(10)
-)
+(1, N'bs001', N'123456', 1, '1'),
+(2, N'bs002', N'123456', 1, '2'),
+(3, N'bs003', N'123456', 1, '3')
 GO
 
 INSERT INTO	dbo.ThanNhan
@@ -65,3 +56,17 @@ VALUES
 ('2', N'Nguyễn Văn Minh', '01-01-1992', N'Hà Nội', N'Nữ', '151503669', '2')
 GO
 
+
+
+
+CREATE PROC sp_Thuoc_Select
+AS
+BEGIN
+    SELECT MaThuoc,
+           TenThuoc,
+           DuongDung,
+           DVT,
+           DonGia
+    FROM dbo.Thuoc
+END
+GO

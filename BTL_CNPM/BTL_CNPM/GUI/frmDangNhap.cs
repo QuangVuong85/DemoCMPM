@@ -1,4 +1,5 @@
-﻿using BTL_CNPM.GUI;
+﻿using BTL_CNPM.BLL;
+using BTL_CNPM.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -67,15 +68,36 @@ namespace BTL_CNPM
             MouseDown();
         }
 
+        private void txtTaiKhoan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            btnDangNhap_Click(null, null);
+        }
+
+        private void txtMatKhau_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            btnDangNhap_Click(null, null);
+        }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            frmMain fm = new frmMain();
-            this.Hide();
-            fm.ShowDialog();
-            this.Show();
+            if((new DangNhap_BLL()).CheckDangNhap(txtTaiKhoan.Text.Trim(), txtMatKhau.Text.Trim()) == true)
+            {
+                frmMain fm = new frmMain();
+                this.Hide();
+                fm.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng.", "Thông báo", MessageBoxButtons.OK);
+                txtTaiKhoan.Focus();
+            }
         }
 
         #endregion
 
+        #region function
+
+        #endregion
     }
 }

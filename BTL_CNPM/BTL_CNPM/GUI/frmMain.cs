@@ -87,7 +87,9 @@ namespace BTL_CNPM.GUI
 
         private void danhMucNVToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmDMNhanVien dmnhanvien = new frmDMNhanVien();
+            closeFormInPanel(this.panelMain);
+            loadForm(dmnhanvien);
         }
 
         private void danhMucBenhNhanToolStripMenuItem_Click(object sender, EventArgs e)

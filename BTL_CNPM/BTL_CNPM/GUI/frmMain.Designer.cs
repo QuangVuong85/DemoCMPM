@@ -57,10 +57,10 @@
             this.infoToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.versionToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripTop = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.panelMain = new System.Windows.Forms.Panel();
             this.homeToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.closePanelToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.menuStripTop.SuspendLayout();
             this.statusStripBottom.SuspendLayout();
             this.toolStripTop.SuspendLayout();
@@ -94,26 +94,26 @@
             // saoLuuDuLieuToolStripMenuItem
             // 
             this.saoLuuDuLieuToolStripMenuItem.Name = "saoLuuDuLieuToolStripMenuItem";
-            this.saoLuuDuLieuToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.saoLuuDuLieuToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.saoLuuDuLieuToolStripMenuItem.Text = "Sao lưu dữ liệu";
             this.saoLuuDuLieuToolStripMenuItem.Click += new System.EventHandler(this.saoLuuDuLieuToolStripMenuItem_Click);
             // 
             // doiMatKhauToolStripMenuItem
             // 
             this.doiMatKhauToolStripMenuItem.Name = "doiMatKhauToolStripMenuItem";
-            this.doiMatKhauToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.doiMatKhauToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.doiMatKhauToolStripMenuItem.Text = "Đổi mật khẩu";
             this.doiMatKhauToolStripMenuItem.Click += new System.EventHandler(this.doiMatKhauToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(213, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(181, 6);
             // 
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
             this.dangXuatToolStripMenuItem.Text = "Đăng xuất";
             this.dangXuatToolStripMenuItem.Click += new System.EventHandler(this.dangXuatToolStripMenuItem_Click);
             // 
@@ -277,7 +277,7 @@
             this.versionToolStripStatusLabel.Name = "versionToolStripStatusLabel";
             this.versionToolStripStatusLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.versionToolStripStatusLabel.Size = new System.Drawing.Size(91, 20);
-            this.versionToolStripStatusLabel.Text = "Version 1.0.0";
+            this.versionToolStripStatusLabel.Text = "Version 1.0.1";
             // 
             // toolStripTop
             // 
@@ -292,19 +292,6 @@
             this.toolStripTop.TabIndex = 2;
             this.toolStripTop.Text = "toolStrip1";
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
-            // 
-            // panelMain
-            // 
-            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 55);
-            this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1332, 611);
-            this.panelMain.TabIndex = 3;
-            // 
             // homeToolStripButton
             // 
             this.homeToolStripButton.AccessibleName = "";
@@ -316,6 +303,11 @@
             this.homeToolStripButton.ToolTipText = "Trang chủ";
             this.homeToolStripButton.Click += new System.EventHandler(this.homeToolStripButton_Click);
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
+            // 
             // closePanelToolStripButton
             // 
             this.closePanelToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -325,6 +317,14 @@
             this.closePanelToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.closePanelToolStripButton.ToolTipText = "Đóng cửa sổ";
             this.closePanelToolStripButton.Click += new System.EventHandler(this.closePanelToolStripButton_Click);
+            // 
+            // panelMain
+            // 
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 55);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1332, 611);
+            this.panelMain.TabIndex = 3;
             // 
             // frmMain
             // 
